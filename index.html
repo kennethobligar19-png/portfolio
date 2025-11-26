@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="port.css" />
+</head>
+<body>
+  <!-- floating glowing background + circles container -->
+  <div class="site-glow"></div>
+  <div id="floating-circles" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">Σ</div>
+        <div class="brand-name">My Portfolio</div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="modeToggle" class="mode-toggle" aria-pressed="false" aria-label="Toggle color mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero section--pad">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <!-- use uploaded image path here -->
+          <div class="hero-avatar-wrap">
+            <img src="gallery/portfoliopfp.jpg" alt="Manny Kenneth James L. Obligar" class="hero-avatar" />
+            <div class="avatar-halo" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <p class="micro">Hello! I am <span class="accent">Manny Kenneth James L. Obligar</span></p>
+          <h1 class="hero-title">I'm a BSIT Student</h1>
+          <p class="hero-sub">Currently: 1st Year BSIT — learning, building, solving.</p>
+
+          <div class="hero-quote">
+            <p>
+              <strong>Personal Quote:</strong> In programming and in life, I go with the flow —
+              solving, learning, and improving one step at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section--pad">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">
+          I'm a first-year BSIT student passionate about programming and development. Every project I work on
+          helps me improve my coding skills and explore creative solutions through logic and structure.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section--pad">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="hero-meta">
+          <div class="skill-box">
+            <span class="meta-pill">C</span>
+            <div class="skill-progress" aria-label="C skill proficiency level" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 45%;"></div>
+            </div>
+            <div class="skill-percentage">45%</div>
+            <p style="color: var(--muted); font-style: italic; margin-top: 10px; font-weight: 400; max-width: 140px; text-align: center;">
+              Proficient in C programming for foundational algorithmic and system programming skills.
+            </p>
+          </div>
+          <div class="skill-box">
+            <span class="meta-pill">HTML</span>
+            <div class="skill-progress" aria-label="HTML skill proficiency level" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+            <div class="skill-percentage">50%</div>
+            <p style="color: var(--muted); font-style: italic; margin-top: 10px; font-weight: 400; max-width: 140px; text-align: center;">
+              Skilled in creating responsive, accessible web layouts with semantic markup and modern CSS techniques.
+            </p>
+          </div>
+          <div class="skill-box">
+            <span class="meta-pill">CSS</span>
+            <div class="skill-progress" aria-label="CSS skill proficiency level" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 40%;"></div>
+            </div>
+            <div class="skill-percentage">40%</div>
+            <p style="color: var(--muted); font-style: italic; margin-top: 10px; font-weight: 400; max-width: 140px; text-align: center;">
+              Skilled in creating responsive, accessible web layouts with semantic markup and modern CSS techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (2x2 cards like screenshot) -->
+    <section id="experience" class="section--pad dark-section">
+      <div class="container">
+        <h2 class="section-title">Experiences</h2>
+
+        <div class="experience-grid">
+          <article class="exp-card">
+            <div class="exp-icon" aria-hidden="true">📱</div>
+            <h3>ICT-CSS Student (Senior High School)</h3>
+            <p class="muted">2023 - 2025</p>
+            <p class="muted">As an ICT–CSS student, I learned how to handle computer hardware, install software, and fix basic technical problems. 
+              I gained hands-on experience in assembling parts, checking systems, and following safety procedures while working. 
+              Through our lessons and practical activities, I strengthened my problem-solving skills and attention to detail. 
+              This experience helped me understand technology better and boosted my confidence in doing IT-related tasks.
+            </p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-icon" aria-hidden="true">🌐</div>
+            <h3>TESDA NC II Training - Computer Systems Servicing</h3>
+            <p class="muted">November to December 2024</p>
+            <p class="muted">I completed the TESDA NC II training in Computer Systems Servicing, where I gained practical skills in assembling computer units, installing operating systems, and troubleshooting both hardware and software issues. 
+              The training provided hands-on experience with tools, proper handling of components, and strict adherence to safety procedures. 
+              This experience enhanced my ability to diagnose technical problems accurately and implement effective solutions.
+            </p>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-icon" aria-hidden="true">🌐</div>
+            <h3>OJT Experience – Ultimate PC Malaybalay</h3>
+            <p class="muted">March 2025</p>
+            <p class="muted">I gained hands-on experience in assembling and repairing computer systems, installing software, and troubleshooting technical issues. 
+              I also assisted in maintaining devices and supporting clients with their IT needs. 
+              This experience enhanced my technical skills, problem-solving abilities, and understanding of real-world IT operations.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- center glowing emblem (visual break) -->
+    <section class="section--pad emblem-wrap" aria-hidden="true">
+      <div class="container emblem-inner">
+        <div class="emblem-outer">
+          <div class="emblem">Σ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects — alternating layout -->
+    <section id="projects" class="section--pad">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <article class="project-row">
+          <div class="project-media">
+            <img src="gallery/ownportfolio.png" alt="Project screenshot" />
+          </div>
+          <div class="project-info">
+            <p class="label">Featured Project</p>
+            <h3>Personal Portfolio</h3>
+            <p>
+              This project is my own portfolio site. 
+              I made it to show my skills, the projects I’ve worked on, and the things I can do. 
+              The website is simple, clean, and easy to explore. 
+              It shows my growth and gives people a quick look at who I am and what I can create.
+            </p>
+            <a class="btn" href="index.html">View project</a>
+          </div>
+        </article>
+
+        <article class="project-row reverse">
+          <div class="project-info">
+            <p class="label">Featured Project</p>
+            <h3>My Favorite Hobbies</h3>
+            <p>
+              This project is a simple website that shares my favorite hobbies and the things I enjoy doing in my free time. 
+              It shows a short description of each of my hobbies. 
+              The site is easy to read and made to help others understand what I like and what inspires me.
+            </p>
+            <a class="btn" href="https://kennethobligar19-png.github.io/Hobbies/">View project</a>
+          </div>
+          <div class="project-media">
+            <img src="gallery/favoritehobbies.png" alt="Project screenshot" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section--pad dark-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="lead">I'm currently looking to join a cross-functional team. Let's connect.</p>
+
+        <ul class="contact-list">
+          <li><span class="icon">📧</span> <a href="mailto:kennethobligar19@gmail.com"><b>Gmail:</b> kennethobligar19@gmail.com</a></li>
+          <li><span class="icon">📘</span> <a href="https://www.facebook.com/MannyKennethJamesObligar" target="_blank" rel="noopener"><b>Facebook:</b> Manny Kenneth James Obligar</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 | Created by a BSIT Student | Still Learning</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS: floating circles, dark/light toggle, simple reveal -->
+  <script>
+    // Floating circles generator
+    (function createFloatingCircles() {
+      const container = document.getElementById('floating-circles');
+      const NUM = 35;
+      for (let i = 0; i < NUM; i++) {
+        const c = document.createElement('div');
+        c.className = 'float-circle';
+        const size = Math.random() * 28 + 6;
+        c.style.width = size + 'px';
+        c.style.height = size + 'px';
+        c.style.left = (Math.random() * 100) + '%';
+        c.style.bottom = (Math.random() * 20 - 10) + 'vh';
+        c.style.opacity = (Math.random() * 0.6) + 0.15;
+        c.style.animationDuration = (18 + Math.random() * 20) + 's';
+        c.style.animationDelay = (Math.random() * 8) + 's';
+        container.appendChild(c);
+      }
+    })();
+
+    // dark/light toggle (simple)
+    (function modeToggle() {
+      const btn = document.getElementById('modeToggle');
+      const root = document.documentElement;
+      function setMode(m) {
+        if (m === 'light') {
+          document.body.classList.add('light-mode');
+          btn.textContent = '☀️';
+          btn.setAttribute('aria-pressed','true');
+        } else {
+          document.body.classList.remove('light-mode');
+          btn.textContent = '🌙';
+          btn.setAttribute('aria-pressed','false');
+        }
+        localStorage.setItem('site-mode', m);
+      }
+      btn.addEventListener('click', () => {
+        setMode(document.body.classList.contains('light-mode') ? 'dark' : 'light');
+      });
+      const saved = localStorage.getItem('site-mode') || 'dark';
+      setMode(saved);
+    })();
+
+    // simple reveal on scroll
+    (function reveal() {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.06 });
+
+      document.querySelectorAll('.section--pad, .project-row, .exp-card, .hero-inner').forEach(el => {
+        el.classList.add('reveal');
+        obs.observe(el);
+      });
+    })();
+
+    // Custom smooth scroll behavior for Work Experience nav link
+    (function() {
+      const expLink = document.querySelector('a[href="#experience"]');
+      if (expLink) {
+        expLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.getElementById('experience');
+          if (target) {
+            const offset = 50; // Adjust offset to reduce excessive scroll amount
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    })();
+
+  </script>
+</body>
+</html>
